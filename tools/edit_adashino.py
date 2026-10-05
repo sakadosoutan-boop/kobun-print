@@ -33,6 +33,11 @@ def register(xml: bytes) -> None:
             ET.register_namespace(prefix.decode(), uri.decode())
 
 
+def is_layout_run(run: ET.Element) -> bool:
+    """図形・枠を抱えた run か。mc:AlternateContent は w: ではないので局所名で見る。"""
+    return any(c.tag.split("}")[-1] in ("AlternateContent", "drawing", "pict") for c in run)
+
+
 def text_of(p: ET.Element) -> str:
     return "".join(t.text or "" for t in p.iter(w("t")))
 
@@ -47,11 +52,6 @@ def make_runs(line: str, model: ET.Element) -> list[ET.Element]:
     """1 行ぶんの run を作る。model の rPr を基準の書式として使う。"""
     base = model.find(w("rPr"))
     runs: list[ET.Element] = []
-    for part in _SEG.split(line):
-        if part == "":
-            continue
-        # split の奇数番目が {} の中身
-        pass
     pieces = []
     pos = 0
     for m in _SEG.finditer(line):
@@ -165,10 +165,14 @@ def main() -> int:
     model = paras[i_first]
 
     # ☆３ を差し替え（前教材『古今著聞集』の設問が残っていた）
-    for run in paras[i_q3].findall(w("r")):
-        paras[i_q3].remove(run)
-    for run in make_runs(QUESTION_3, model.find(w("r"))):
-        paras[i_q3].append(run)
+    # 文字の run だけを差し替える。☆３の枠（角丸四角形）は同じ段落に錨があるので残す。
+    q3 = paras[i_q3]
+    text_runs = [r for r in q3.findall(w("r")) if not is_layout_run(r)]
+    position = list(q3).index(text_runs[0]) if text_runs else len(q3)
+    for run in text_runs:
+        q3.remove(run)
+    for offset, run in enumerate(make_runs(QUESTION_3, model.find(w("r")))):
+        q3.insert(position + offset, run)
 
     # 下書きの段落を新しい本文で置き換える
     anchor = list(body).index(paras[i_first])
@@ -181,9 +185,7 @@ def main() -> int:
     # 図形（【ー読解のためにー】や「自／他」の軸）はレイアウトなので残す。
     keep = paras[i_keep]
     for run in list(keep.findall(w("r"))):
-        if list(run.iter(w("drawing"))) or run.find(w("AlternateContent")) is not None:
-            break
-        if any(c.tag.split("}")[-1] == "AlternateContent" for c in run):
+        if is_layout_run(run):
             break
         if re.match(r"^〇長く生きて", "".join(t.text or "" for t in run.iter(w("t")))):
             keep.remove(run)

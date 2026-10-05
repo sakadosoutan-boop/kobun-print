@@ -1,0 +1,149 @@
+{
+  "説明": "書式表。共通の 書式NN と、スロットごとの上書き（原本に残る細かな書式の差）。",
+  "共通": {
+    "書式01": {
+      "set": {
+        "bdr": "<w:bdr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"auto\" />"
+      }
+    },
+    "書式02": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"HG丸ｺﾞｼｯｸM-PRO\" w:eastAsia=\"HG丸ｺﾞｼｯｸM-PRO\" w:hAnsi=\"HG丸ｺﾞｼｯｸM-PRO\" w:hint=\"eastAsia\" />",
+        "sz": "<w:sz xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"18\" />",
+        "vertAlign": "<w:vertAlign xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"superscript\" />"
+      }
+    },
+    "書式03": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"Segoe UI Symbol\" w:eastAsia=\"UD デジタル 教科書体 N-B\" w:hAnsi=\"Segoe UI Symbol\" w:cs=\"Segoe UI Symbol\" w:hint=\"eastAsia\" />",
+        "vertAlign": "<w:vertAlign xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"superscript\" />"
+      }
+    },
+    "書式04": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"UD デジタル 教科書体 N-B\" w:eastAsia=\"UD デジタル 教科書体 N-B\" w:hAnsi=\"UD デジタル 教科書体 N-B\" w:cs=\"UD デジタル 教科書体 N-B\" w:hint=\"eastAsia\" />"
+      }
+    },
+    "書式05": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"UD デジタル 教科書体 N-B\" w:eastAsia=\"UD デジタル 教科書体 N-B\" w:hAnsi=\"UD デジタル 教科書体 N-B\" w:cs=\"UD デジタル 教科書体 N-B\" w:hint=\"eastAsia\" />",
+        "vertAlign": "<w:vertAlign xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"superscript\" />"
+      }
+    },
+    "書式06": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"HG丸ｺﾞｼｯｸM-PRO\" w:eastAsia=\"HG丸ｺﾞｼｯｸM-PRO\" w:hAnsi=\"HG丸ｺﾞｼｯｸM-PRO\" />"
+      }
+    },
+    "書式07": {
+      "unset": [
+        "color"
+      ]
+    },
+    "書式08": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"HG丸ｺﾞｼｯｸM-PRO\" w:eastAsia=\"HG丸ｺﾞｼｯｸM-PRO\" w:hAnsi=\"HG丸ｺﾞｼｯｸM-PRO\" />"
+      },
+      "unset": [
+        "color"
+      ]
+    },
+    "書式09": {
+      "set": {
+        "w": "<w:w xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"60\" />",
+        "eastAsianLayout": "<w:eastAsianLayout xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:id=\"-384450048\" w:vert=\"1\" w:vertCompress=\"1\" />"
+      }
+    },
+    "書式10": {
+      "set": {
+        "b": "<w:b xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+        "bCs": "<w:bCs xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+        "u": "<w:u xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"single\" />"
+      }
+    },
+    "書式11": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"UD デジタル 教科書体 N-B\" w:eastAsia=\"UD デジタル 教科書体 N-B\" w:hAnsi=\"はれのそら明朝\" w:hint=\"eastAsia\" />"
+      }
+    },
+    "書式12": {
+      "set": {
+        "color": "<w:color xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"000000\" />"
+      }
+    },
+    "書式13": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"HG丸ｺﾞｼｯｸM-PRO\" w:eastAsia=\"HG丸ｺﾞｼｯｸM-PRO\" w:hAnsi=\"HG丸ｺﾞｼｯｸM-PRO\" w:hint=\"eastAsia\" />",
+        "color": "<w:color xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"000000\" />"
+      }
+    },
+    "書式14": {
+      "set": {
+        "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"HG丸ｺﾞｼｯｸM-PRO\" w:eastAsia=\"HG丸ｺﾞｼｯｸM-PRO\" w:hAnsi=\"HG丸ｺﾞｼｯｸM-PRO\" w:hint=\"eastAsia\" />"
+      }
+    },
+    "書式15": {
+      "set": {
+        "color": "<w:color xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"FF0000\" />",
+        "sz": "<w:sz xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"18\" />",
+        "szCs": "<w:szCs xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"20\" />"
+      }
+    }
+  },
+  "スロット別": {
+    "s0004": {
+      "sup": {
+        "set": {
+          "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"UD デジタル 教科書体 N-B\" w:eastAsia=\"UD デジタル 教科書体 N-B\" w:hAnsi=\"はれのそら明朝\" w:hint=\"eastAsia\" />",
+          "vertAlign": "<w:vertAlign xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"superscript\" />"
+        }
+      }
+    },
+    "s0005": {
+      "sup": {
+        "set": {
+          "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"UD デジタル 教科書体 N-B\" w:eastAsia=\"UD デジタル 教科書体 N-B\" w:hAnsi=\"はれのそら明朝\" w:hint=\"eastAsia\" />",
+          "vertAlign": "<w:vertAlign xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"superscript\" />"
+        }
+      }
+    },
+    "s0006": {
+      "sup": {
+        "set": {
+          "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"UD デジタル 教科書体 N-B\" w:eastAsia=\"UD デジタル 教科書体 N-B\" w:hAnsi=\"はれのそら明朝\" w:hint=\"eastAsia\" />",
+          "vertAlign": "<w:vertAlign xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"superscript\" />"
+        }
+      },
+      "u": {
+        "set": {
+          "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"UD デジタル 教科書体 N-B\" w:eastAsia=\"UD デジタル 教科書体 N-B\" w:hAnsi=\"UD デジタル 教科書体 N-B\" w:cs=\"UD デジタル 教科書体 N-B\" w:hint=\"eastAsia\" />",
+          "u": "<w:u xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"single\" />"
+        }
+      }
+    },
+    "s0037": {
+      "ans": {
+        "set": {
+          "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"HG丸ｺﾞｼｯｸM-PRO\" w:eastAsia=\"HG丸ｺﾞｼｯｸM-PRO\" w:hAnsi=\"HG丸ｺﾞｼｯｸM-PRO\" />",
+          "color": "<w:color xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"FF0000\" />"
+        }
+      }
+    },
+    "s0038": {
+      "ans": {
+        "set": {
+          "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"HG丸ｺﾞｼｯｸM-PRO\" w:eastAsia=\"HG丸ｺﾞｼｯｸM-PRO\" w:hAnsi=\"HG丸ｺﾞｼｯｸM-PRO\" />",
+          "color": "<w:color xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"FF0000\" />"
+        }
+      }
+    },
+    "s0039": {
+      "ans": {
+        "set": {
+          "rFonts": "<w:rFonts xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:ascii=\"HG丸ｺﾞｼｯｸM-PRO\" w:eastAsia=\"HG丸ｺﾞｼｯｸM-PRO\" w:hAnsi=\"HG丸ｺﾞｼｯｸM-PRO\" />",
+          "color": "<w:color xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" w:val=\"FF0000\" />"
+        }
+      }
+    }
+  }
+}
